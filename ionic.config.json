@@ -1,0 +1,7 @@
+{
+  "name": "taskManagerIONIC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
