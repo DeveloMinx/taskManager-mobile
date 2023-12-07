@@ -30,4 +30,5 @@ Task Manager App es una aplicación móvil desarrollada con Ionic y Angular que 
 2. Abre la consola en la carpeta raiz y ejecuta npm install.
 3. Configura la URL de la API en la carpeta environment.
 
-
+## Contacto
+Si tienes alguna pregunta o problema, contactame en develominx.com.
