@@ -1,0 +1,13 @@
+<app-header headerTitel="Tareas"></app-header>
+
+<ion-content> 
+  <div class="addTaskContainer">
+    <ion-fab>
+      <ion-fab-button [routerLink]="['/tareas/create-task']">
+        <ion-icon name="add" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab> 
+  </div>
+      
+<app-task-list></app-task-list>
+</ion-content>

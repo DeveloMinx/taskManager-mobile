@@ -1,0 +1,34 @@
+
+
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formularioTarea" (ngSubmit)="agregarTarea()">
+    <ion-list>
+
+      <!-- Otros campos del formulario -->
+      <ion-item>
+        <ion-input label="Nombre" formControlName="nombre" name="nombre" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Descripción" formControlName="descripcion" name="descripcion"></ion-input>
+      </ion-item>
+
+      <!-- ion-select para la prioridad -->
+      <ion-item>
+        
+        <ion-select label="Prioridad" formControlName="prioridad" placeholder="Seleccionar">
+          <ion-select-option value="Alta">Alta</ion-select-option>
+          <ion-select-option value="Media">Media</ion-select-option>
+          <ion-select-option value="Baja">Baja</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Otros campos del formulario -->
+
+    </ion-list>
+
+    <!-- Botón para enviar el formulario -->
+    <ion-button expand="full" type="submit">Agregar Tarea</ion-button>
+  </form>
+</ion-content>

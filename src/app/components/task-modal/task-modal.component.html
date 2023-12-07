@@ -1,0 +1,23 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar Estado</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarModal()">Regresar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-select label="Cambiar estado" [value]="taskComplete" (ionChange)="onEstadoChange($event)">
+        <ion-select-option value="0">Incompleta</ion-select-option>
+        <ion-select-option value="1">Completa</ion-select-option>
+        <ion-select-option value="3">En Proceso</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="guardarCambios()">Guardar Cambios</ion-button>
+</ion-content>
